@@ -1,0 +1,433 @@
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 8890
+Param | passw : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : ()"(..'())
+Param | passw : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 'NlFINd<'">cozjZJ
+Param | passw : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 9144
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : ((,"(((,,'
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 'PGwMaC<'">ebnfkw
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+Param | btnSubmit : 8008
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+Param | btnSubmit : ).,(")'(.(
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+Param | btnSubmit : 'PtESsW<'">RnUPmL
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 8264
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 1696
+Param | passw : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : ,"))(.'(()
+Param | passw : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 'UesNvx<'">qqdKAf
+Param | passw : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 9097
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : .))".(.'..
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | uid : 
+Param | passw : 'ZPYvek<'">bPndRv
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | query : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | query : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | query : 8081
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | query : ((('(",).)
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | query : 'CWMYYg<'">WpBhbA
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 6845
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : ',")(.....
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 'TzPukG<'">ZOIcSx
+Param | btnSubmit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 
+Param | btnSubmit : 8172
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 
+Param | btnSubmit : (.,').()."
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | txtEmail : 
+Param | btnSubmit : 'ThcRlO<'">tOeNgs
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | content : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | content : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | content : 3205
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | content : ,)().'"().
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | content : 'yZnuML<'">GlshkE
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 3083
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : .,.')..",)
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 'VkfdjR<'">lyqiUx
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 9913
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : )"))',(,,(
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 'mOiMGg<'">riBhZg
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 1898
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : .,')"(,),(
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 'UwYPpq<'">PZgpzl
+Param | subject : 
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 4740
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : ',(..()"),
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 'cmqgyG<'">hOXsGh
+Param | comments : 
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 6939
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : )).'),,"((
+Param | submit : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 1133
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : "..(',,,((
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+Param | subject : 
+Param | comments : 
+Param | submit : 'FyLUxA<'">QQVlRb
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 5571
+Param | name : 
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : ,.),,'",,.
+Param | name : 
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 'FXqCnO<'">QbJNQK
+Param | name : 
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 4218
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : ,.."'(().)
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 'Ladwpl<'">PkBLpj
+Param | email_addr : 
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 1230
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : .)).".')))
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 'QPhWYJ<'">bOxoHT
+
+[*]DEBUG Info
+Language / Attack type | unknown : unknown
+Param | cfile : 
+Param | name : 
+Param | email_addr : 1480
+
