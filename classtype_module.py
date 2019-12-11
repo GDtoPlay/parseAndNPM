@@ -11,20 +11,36 @@ def readLanguage(payload):
     if Lan in classtype:
         return classtype.index(Lan)
 
+def PostParse(Data, Content):
+    params = []
+    if 'multipart' in Content:
+        pass
 
-def GetParseParamsData(Referer, URL, Data, Method):
+    else if 'json' in Content:
+        pass
+
+    else if 'x-www-form-urlencoded' in Content:
+        tokens = Data.split('&')
+        for token in tokens:
+            var = token.split('=')
+            if len(var) > 1:
+                params.append({'name': var[0], 'value': var[1]})
+
+
+
+def GetParseParamsData(Referer, URL, Data, Method, Content):
     params = []
     parseLocReferer = Referer.find('?')
-    parseLocData = Data.find('?')
+    parseLocURL = URL.find('?')
 
     parseReferer = ''
-    parseData = ''
+    parseURL = ''
 
     if parseLocReferer != -1:
         parseReferer = Referer[parseLocReferer + 1:]
 
-    if parseLocData != -1:
-        parseData = Data[parseLocData + 1:]
+    if parseLocURL != -1:
+        parseURL = URL[parseLocURL + 1:]
 
     if parseLocReferer != -1:
         tokens = parseReferer.split('&')
@@ -33,14 +49,15 @@ def GetParseParamsData(Referer, URL, Data, Method):
             if len(var) > 1:
                 params.append({'name': var[0], 'value': var[1]})
 
-    if parseLocData != -1:
-        tokens = parseData.split('&')
+    if parseLocURL != -1:
+        tokens = parseURL.split('&')
         for token in tokens:
             var = token.split('=')
             if len(var) > 1:
                 params.append({'name': var[0], 'value': var[1]})
 
-    
+    if Method == 'POST':
+        pass
 
     return params
 
@@ -55,7 +72,7 @@ def excmodule(lannum, classifyResult, payload):
     if lannum == 1:
         if classifyResult['attackType'] == "SQLI":
             #exe SQLI
-            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'])
+            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'],payload['Content-Type'])
             return params
             pass
         #excute sql module
@@ -63,7 +80,7 @@ def excmodule(lannum, classifyResult, payload):
     if lannum == 2:
         if classifyResult['attackType'] == "XSS":
             #exe XSS
-            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'])
+            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'],payload['Content-Type'])
             return params
             pass
         #excute jsp module
