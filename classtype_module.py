@@ -14,12 +14,20 @@ def readLanguage(payload):
 def PostParse(Data, Content):
     params = []
     if 'multipart' in Content:
+        token = Content.split('=')
+        boundary = token[-1]
+        DataTokens = Data.split(boundary)
+        for token in Datatoken[:-1]:
+            if len(token) < 2 : continue
+            token = token.replace("\\r\\n","")
+            var = token.split('\\"')
+            if len(var[2]) > 0:
+                params.append({'name': var[1], 'value': var[2]})
+
+    elif 'json' in Content:
         pass
 
-    else if 'json' in Content:
-        pass
-
-    else if 'x-www-form-urlencoded' in Content:
+    elif 'x-www-form-urlencoded' in Content:
         tokens = Data.split('&')
         for token in tokens:
             var = token.split('=')
