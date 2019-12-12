@@ -31,6 +31,7 @@ def csvFileRead():
         if ".csv" in file:
             csvFiles.append(file)
 
+    pList =[]
     for cFile in csvFiles:
         f = open(fileLoc + "/" + cFile, encoding='utf-8')
         rdr = list(csv.reader(f))
@@ -51,8 +52,6 @@ def csvFileRead():
 
             colCount = colCount + 1
 
-        pList =[]
-
         for packet in rdr[1:]:
             pDict = dict()
 
@@ -69,17 +68,16 @@ def csvFileRead():
         #print(toJson(pList))
 
 def pcapFileRead():
-    fileLoc = "pcapFolder"
+    fileLoc = "pcapFolder/test"
     fileList = os.listdir(fileLoc)
     pcapFiles = []
     for file in fileList:
         if ".pcap" in file:
             pcapFiles.append(file)
 
+    pList =[]
     for pFile in pcapFiles:
         pkt = rdpcap(fileLoc + "/" + pFile)
-
-        pList =[]
 
         for packet in pkt:
             layer = packet.payload
@@ -110,6 +108,44 @@ def pcapFileRead():
                     if "Method" not in pDict:
                         pDict['Method'] = ''
                     pList.append(pDict)
+
+    return pList
+        #print(toJson(pList))
+
+def pcapSingleRead(fileLoc, file):
+
+    pList =[]
+    pkt = rdpcap(fileLoc + "/" + file)
+
+    for packet in pkt:
+        layer = packet.payload
+        pDict = dict()
+
+        while layer:
+            layerName = layer.name
+
+            if layerName == "IP":
+                pDict["srcIP"] = layer.src
+                pDict["dstIP"] = layer.dst
+
+            if layerName == "TCP":
+                pDict["sport"] = layer.sport
+                pDict["dport"] = layer.dport
+
+
+            if layerName == "Raw":
+                result = processHTTP(layer.load)
+                for k,v in result.items():
+                    pDict[k] = v
+
+            layer = layer.payload
+
+            if "Method" in pDict or "body" in pDict:
+
+                # body만 있고 Method가 없는 경우가 있어서 초기화하였습니다.
+                if "Method" not in pDict:
+                    pDict['Method'] = ''
+                pList.append(pDict)
 
     return pList
         #print(toJson(pList))
