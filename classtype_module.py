@@ -43,7 +43,13 @@ def PostParse(Data, Content):
 
 
 
-def GetParseParamsData(Referer, URL, Data, Method, Content):
+def GetParseParamsData(Filds):        #Filds =  [Referer, URL, Data, Method, Content]
+    Referer = Filds[0]
+    URL = Filds[1]
+    Data = Filds[2]
+    Method = Filds[3]
+    Content = Filds[4]
+
     params = []
     parseLocReferer = Referer.find('?')
     parseLocURL = URL.find('?')
@@ -88,16 +94,83 @@ def excmodule(lannum, classifyResult, payload):
     if lannum == 1:
         if classifyResult['attackType'] == "SQLI":
             #exe SQLI
-            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'],payload['Content-Type'])
-            return params
-            pass
+            try:
+                Referer = ''
+                URL = ''
+                Data = ''
+                Method = ''
+                Content = ''
+
+                try:
+                    Referer = payload['Referer']
+                except:
+                    pass
+
+                try:
+                    URL = payload['URL']
+                except:
+                    pass
+
+                try:
+                    Data = payload['Data']
+                except:
+                    pass
+
+                try:
+                    Method = payload['Method']
+                except:
+                    pass
+
+                try:
+                    Content = payload['Content-Type']
+                except:
+                    pass
+
+                params = GetParseParamsData([Referer, URL, Data, Method, Content])
+                return params
+            except:
+                return []
         #excute sql module
         pass
     if lannum == 2:
         if classifyResult['attackType'] == "XSS":
             #exe XSS
-            params = GetParseParamsData(payload['Referer'],payload['URL'],payload['Data'],payload['Method'],payload['Content-Type'])
-            return params
+            try:
+                Referer = ''
+                URL = ''
+                Data = ''
+                Method = ''
+                Content = ''
+
+                try:
+                    Referer = payload['Referer']
+                except:
+                    pass
+
+                try:
+                    URL = payload['URL']
+                except:
+                    pass
+
+                try:
+                    Data = payload['Data']
+                except:
+                    pass
+
+                try:
+                    Method = payload['Method']
+                except:
+                    pass
+
+                try:
+                    Content = payload['Content-Type']
+                except:
+                    pass
+
+                params = GetParseParamsData([Referer, URL, Data, Method, Content])
+                return params
+            except:
+                return []
             pass
         #excute jsp module
         pass

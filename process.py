@@ -2,7 +2,11 @@
 from packet_read import *
 from classify import *
 from classtype_module import *
+from SpecialWordChar_2 import *
 import json
+import numpy as np
+import time
+
 printlist=[]
 
 def debugInfo(payload, classifyResult, count):
@@ -40,6 +44,16 @@ def checkResult(classifyResult, check):
         return True
     return False
 
+def runSpecial(values, attackType):
+    if attackType == 'SQLI':
+        return special(values, 'SQL')
+
+    elif attackType == 'XSS':
+        return special(values, 'XSS')
+
+    else:
+        return []
+
 
 def testDataMake():
     debug = 1   # 디버깅 관련 변수입니다. 값이 1이면 분류 실패 시 원인을 파악하기 위해 패킷을 출력합니다.
@@ -65,7 +79,8 @@ def testDataMake():
                 valList = []
                 if dictList:
                     for valDict in dictList:
-                        valList.append(valDict['value'])
+                        if valDict['value']:
+                            valList.append(valDict['value'])
                 if valList:
                     nPayloads.append([valList, classifyResult['attackType']])     # [value list, attack type]
 
@@ -78,7 +93,8 @@ def testDataMake():
                 valList = []
                 if dictList:
                     for valDict in dictList:
-                        valList.append(valDict['value'])
+                        if valDict['value']:
+                            valList.append(valDict['value'])
                 if valList:
                     nPayloads.append([valList, classifyResult['attackType']])     # [value list, attack type]
 
@@ -92,14 +108,24 @@ def testDataMake():
             valList = []
             if dictList:
                 for valDict in dictList:
-                    valList.append(valDict['value'])
+                    if valDict['value']:
+                        valList.append(valDict['value'])
             if valList:
                 nPayloads.append([valList, classifyResult['attackType']])          # [value list, attack type]
 
     #이후 special char를 통해 npm을 만들어야 함
-    p=open('test.txt','w',encoding='utf-8')
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    afterSpecial = []
+    for nPayload in nPayloads:
+        afterSpecial.append(runSpecial(nPayload[0], nPayload[1]))
+    npArray = np.array(afterSpecial)
+    np.save('numpy/test/' + 'test_' + timestr, npArray) # npy save
+
+    '''
+    p=open('numpy/test/' + 'test_' + timestr + '.txt','w',encoding='utf-8')
     p.write(str(nPayloads))
     p.close()
+    '''
 
 def trainDataMake():
     debug = 1   # 디버깅 관련 변수입니다. 값이 1이면 분류 실패 시 원인을 파악하기 위해 패킷을 출력합니다.
@@ -150,7 +176,8 @@ def trainDataMake():
                     valList = []
                     if dictList:
                         for valDict in dictList:
-                            valList.append(valDict['value'])
+                            if valDict['value']:
+                                valList.append(valDict['value'])
                     if valList:
                         if classifyResult['attackType'] == target:
                             nPayloads.append([valList, target])     # [value list, attack type]
@@ -164,7 +191,8 @@ def trainDataMake():
                     valList = []
                     if dictList:
                         for valDict in dictList:
-                            valList.append(valDict['value'])
+                            if valDict['value']:
+                                valList.append(valDict['value'])
                     if valList:
                         if classifyResult['attackType'] == target:
                             nPayloads.append([valList, target])     # [value list, attack type]
@@ -179,20 +207,28 @@ def trainDataMake():
                 valList = []
                 if dictList:
                     for valDict in dictList:
-                        valList.append(valDict['value'])
+                        if valDict['value']:
+                            valList.append(valDict['value'])
                 if valList:
                     if classifyResult['attackType'] == target:
                         nPayloads.append([valList, target])          # [value list, attack type]
 
         #이후 special char를 통해 npm을 만들어야 함
-        p=open(target + '_' + str(fileCount) + '_train.txt','w',encoding='utf-8')
+        afterSpecial = []
+        for nPayload in nPayloads:
+            afterSpecial.append(runSpecial(nPayload[0], nPayload[1]))
+
+        npArray = np.array(afterSpecial)
+        np.save('numpy/train/' + target + '_' + str(fileCount) + '_train', npArray) # npy save
+
+        '''
+        p=open('numpy/train/' + target + '_' + str(fileCount) + '_train.txt','w',encoding='utf-8')
         p.write(str(nPayloads))
         p.close()
+        '''
 
 def printList():
     p=open('test.json','w',encoding='utf-8')
     totalJson = toJson(printlist)
     p.write(totalJson)
     p.close()
-
-testDataMake()
